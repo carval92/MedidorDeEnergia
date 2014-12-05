@@ -5,12 +5,22 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="17"
         android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
 	<uses-permission android:name="android.permission.INTERNET"/>
+	
+	<supports-screens android:resizeable="true"
+                  android:smallScreens="false"
+                  android:normalScreens="true"
+                  android:largeScreens="true"
+                  android:xlargeScreens="false"
+                  android:anyDensity="true"
+                  android:requiresSmallestWidthDp="0"
+                  android:compatibleWidthLimitDp="0"
+                  android:largestWidthLimitDp="0"/>
 	
     <application
         android:hardwareAccelerated="true"
