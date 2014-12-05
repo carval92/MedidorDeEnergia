@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/Logout1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="logout" />
+
+    <TextView
+        android:id="@+id/Ldata1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LlistView1"
+        android:layout_alignLeft="@+id/LlistView1"
+        android:layout_marginBottom="17dp"
+        android:text="Data 1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Ldata1"
+        android:layout_alignBottom="@+id/Ldata1"
+        android:layout_alignLeft="@+id/LlistView2"
+        android:text="Data 2"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Logout1"
+        android:layout_alignBottom="@+id/Logout1"
+        android:layout_centerHorizontal="true"
+        android:text="Select records"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/LlistView2"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/Blist1"
+        android:layout_toLeftOf="@+id/Logout1" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/LlistView1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/Blist1"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+    <Button
+        android:id="@+id/Blist1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/radioGroup1"
+        android:layout_marginBottom="22dp"
+        android:text="List" />
+
+    <Button
+        android:id="@+id/Bgraph1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Blist1"
+        android:layout_alignBottom="@+id/Blist1"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:text="Graph" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/LlistView1"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/textView1" >
+
+        <RadioButton
+            android:id="@+id/Today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Todays Records" />
+
+        <RadioButton
+            android:id="@+id/compare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compare Records" />
+    </RadioGroup>
+
+</RelativeLayout>
