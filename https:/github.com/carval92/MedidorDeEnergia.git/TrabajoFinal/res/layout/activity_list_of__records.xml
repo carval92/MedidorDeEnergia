@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ListView
+        android:id="@+id/LlistView1"
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/LlistView2"
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+    </ListView>
+
+    <Button
+        android:id="@+id/BLlogout"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Logout" />
+
+    <Button
+        android:id="@+id/BLBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LlistView1"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="14dp"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/BLGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/BLBack"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="28dp"
+        android:text="Graph" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/BLlogout"
+        android:layout_alignLeft="@+id/BLBack"
+        android:text="List of records"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/Ldata1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LlistView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:hint="Data 2"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/Ldata2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LlistView2"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/BLlogout"
+        android:hint="Data 1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
